@@ -1,0 +1,10 @@
+runtime: python311
+
+env_variables:
+  PORT: "8080"
+
+entrypoint: python -m streamlit run streamlit_app_basic.py --server.port=$PORT --server.address=0.0.0.0 --server.headless=true
+
+automatic_scaling:
+  min_instances: 0
+  max_instances: 1
