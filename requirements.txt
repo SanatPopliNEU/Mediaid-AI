@@ -11,12 +11,10 @@ python-dotenv==1.0.0
 requests==2.31.0
 Pillow==10.0.0
 
-# LlamaIndex dependencies for RAG functionality
-llama-index-core==0.9.0
-llama-index-llms-openai==0.1.0
-llama-index-embeddings-openai==0.1.0
-llama-index-vector-stores-faiss==0.1.0
-llama-index-readers-file==0.1.0
+# LlamaIndex dependencies for RAG functionality - compatible versions
+llama-index==0.8.69
+llama-index-llms-openai==0.1.13
+llama-index-embeddings-openai==0.1.9
 
 # OCR and document processing
 pytesseract==0.3.10
@@ -24,3 +22,6 @@ opencv-python-headless==4.8.0.76
 easyocr==1.7.0
 pdf2image==1.16.3
 pypdf==3.17.0
+
+# Fix for Python 3.13 compatibility
+setuptools>=65.0.0
