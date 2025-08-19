@@ -1,27 +1,30 @@
-# Streamlit Cloud Requirements for MediAid AI
-streamlit==1.28.0
-streamlit-authenticator==0.2.3
-openai==1.3.0
-faiss-cpu==1.7.4
-pandas==2.0.0
-numpy==1.24.0
-scikit-learn==1.3.0
-joblib==1.3.0
-python-dotenv==1.0.0
-requests==2.31.0
-Pillow==10.0.0
+# Streamlit Cloud Requirements for MediAid AI - Python 3.13 Compatible
+streamlit==1.38.0
+streamlit-authenticator==0.3.2
+openai==1.51.0
+pandas==2.2.2
+numpy==1.26.4
+scikit-learn==1.4.2
+joblib==1.4.2
+python-dotenv==1.0.1
+requests==2.32.3
+Pillow==10.4.0
 
-# LlamaIndex dependencies for RAG functionality - compatible versions
-llama-index==0.8.69
-llama-index-llms-openai==0.1.13
-llama-index-embeddings-openai==0.1.9
+# FAISS - use newer version compatible with Python 3.13
+faiss-cpu==1.8.0
 
-# OCR and document processing
+# LlamaIndex dependencies - latest compatible versions
+llama-index==0.10.57
+llama-index-llms-openai==0.1.29
+llama-index-embeddings-openai==0.1.11
+
+# OCR and document processing - updated versions
 pytesseract==0.3.10
-opencv-python-headless==4.8.0.76
-easyocr==1.7.0
-pdf2image==1.16.3
-pypdf==3.17.0
+opencv-python-headless==4.10.0.84
+easyocr==1.7.1
+pdf2image==1.17.0
+pypdf==4.3.1
 
-# Fix for Python 3.13 compatibility
-setuptools>=65.0.0
+# Essential compatibility packages
+setuptools>=70.0.0
+wheel>=0.43.0
